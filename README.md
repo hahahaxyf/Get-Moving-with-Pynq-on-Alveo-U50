@@ -609,7 +609,7 @@ export PLATFORM_REPO_PATHS=<path to platforms>
    ```shell
    v++ -c vadd.c -t hw --kernel vadd -f /proj/xbuilds/CustTA/2020.1_0602_1458/internal_platforms/xilinx_u50_gen3x16_xdma_2020_3/xilinx_u50_gen3x16_xdma_2020_3.xpfm -o vadd.xo
    ```
-
+   <img src=".\src\23.png" style="zoom:80%;" />
 3. 生成.xclbin文件
 
    ```bash
