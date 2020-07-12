@@ -314,9 +314,9 @@ INFO: All cards validated successfully.
 
 1. 笔者在变更XRT版本时遇到如下问题。在卸载XRT然后重新安装新版本的XRT时,进度条一直卡在66%不变，现给出解决过程仅供参考。
 
-   ![](.\src\4.png)
+<img src=".\src\4.png" alt="img" style="zoom:100%;" />
 
-   ![](.\src\3.png)
+<img src=".\src\3.png" alt="img" style="zoom:100%;" />
 
 2. 由于一直卡住，尝试使用**Ctrl+C** 强制停止。无反应，强制关机。
 
@@ -398,7 +398,7 @@ INFO: All cards validated successfully.
 
 6. 打开welcome-to-pynq.ipynb 文件，您将看到
 
-   ![](.\src\5.png)
+   <img src=".\src\5.png" alt="img" style="zoom:100%;" />
 
    运行将看到部署平台的信息。笔者这显示的是
 
@@ -450,7 +450,7 @@ INFO: All cards validated successfully.
 
 ## 安装要求
 
-![](.\src\1.png)
+<img src=".\src\1.png" alt="img" style="zoom:100%;" />
 
 ## 安装Vitis
 
@@ -579,7 +579,7 @@ export PLATFORM_REPO_PATHS=<path to platforms>
 
 5. 最后得到.xclbin文件
 
-   ![](.\src\6.png)
+   <img src=".\src\6.png" alt="img" style="zoom:100%;" />
 
 
 
@@ -635,27 +635,27 @@ export PLATFORM_REPO_PATHS=<path to platforms>
 
 5. 观察结果。如果执行出现错误请查看是否是本节中已列出来的错误。
 
-   ![image-20200712135343784](.\src\12.png)
+   <img src=".\src\12.png" alt="img" style="zoom:100%;" />
 
-   ![image-20200712135251432](.\src\13.png)
+   <img src=".\src\13.png" alt="img" style="zoom:100%;" />
 
 ## 问题:如何找到platform安装路径
 
 1. 打开vitis
 
-   ![](.\src\7.png)
+   <img src=".\src\7.png" alt="img" style="zoom:100%;" />
 
 2. 选择Create Application Project
 
-   ![](.\src\8.png)
+   <img src=".\src\8.png" alt="img" style="zoom:100%;" />
 
 3. 点击Next
 
-   ![](.\src\9.png)
+   <img src=".\src\9.png" alt="img" style="zoom:100%;" />
 
 4. 搜索u50
 
-   ![](.\src\10.png)
+   <img src=".\src\10.png" alt="img" style="zoom:100%;" />
 
 5. 即会显示当前安装的与u50有关的platform,本次实验中，笔者用到的platform,名字为：xilinx_u50_gen3x16_xdma_201920_3 ,路径为:/proj/xbuilds/CustTA/2020.1_0602_1458/internal_platforms/xilinx_u50_gen3x16_xdma_2020_3/xilinx_u50_gen3x16_xdma_2020_3.xpfm
 
@@ -663,7 +663,7 @@ export PLATFORM_REPO_PATHS=<path to platforms>
 
 出现如下错误
 
-![](src\14.png)
+<img src=".\src\14.png" alt="img" style="zoom:100%;" />
 
 推测是部署平台与生成.xclbin时指定的平台不一致导致。请重新生成
 
@@ -671,39 +671,38 @@ export PLATFORM_REPO_PATHS=<path to platforms>
 
 执行
 
-![ ](.\src\15.png)
+<img src=".\src\15.png" alt="img" style="zoom:100%;" />
 
 出现
 
-![ ](.\src\16.png)
+<img src=".\src\16.png" alt="img" style="zoom:100%;" />
 
 请参考[PYNQ support](https://discuss.pynq.io/t/pynq-on-alveo-typeerror-buffer-is-too-small-for-requested-array/1441)解决。
 
 1. 将 /home/xilinx/.local/lib/python3.7/site-packages/pynq/pl_server/xrt_device.py文件
 
-   ![ ](.\src\17.png)
+   <img src=".\src\17.png" alt="img" style="zoom:100%;" />
 
    改成
 
-   ![ ](.\src\18.png)
+   <img src=".\src\18.png" alt="img" style="zoom:100%;" />
 
 2. 将
 
-   ![](.\src\19.png)
+   <img src=".\src\19.png" alt="img" style="zoom:100%;" />
 
    改成
 
-   ![](C:\Users\yunfengx\OneDrive - Xilinx, Inc\desktop资料\src\20.png)
-
+   <img src=".\src\20.png" alt="img" style="zoom:100%;" />
 ## 问题:RuntimeError:Struct string generation failed
 
 载入.xclbin文件时出现如下错误
 
-![](C:\Users\yunfengx\OneDrive - Xilinx, Inc\desktop资料\src\21.png)
+<img src=".\src\21.png" alt="img" style="zoom:100%;" />
 
 打开编译时产生的文件可以看到
 
-![](C:\Users\yunfengx\OneDrive - Xilinx, Inc\desktop资料\src\22.png)
+<img src=".\src\22.png" alt="img" style="zoom:100%;" />
 
 其中count的偏移地址与in_a相同导致。请确保端口定义正确。只能定义一个s_axilite接口.
 
