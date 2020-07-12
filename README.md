@@ -6,11 +6,11 @@
 
 开发环境最低要求如下图，可参考 [UG1393](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2020_1/ug1393-vitis-application-acceleration.pdf)
 
-<img src=".\src\1.png" alt="img" style="zoom:100%;" />
+<img src="./src/1.png" alt="img" style="zoom:100% align=center;" />
 
 部署环境最低要求如下图，可参考 [UG1370](https://www.xilinx.com/support/documentation/boards_and_kits/accelerator-cards/1_6/ug1370-u50-installation.pdf)
 
-<img src=".\src\2.png" alt="img" style="zoom:100%;" />
+<img src="./src/2.png" alt="img" style="zoom:100% align=center;" />
 
 笔者使用的环境如下
 
